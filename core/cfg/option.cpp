@@ -133,6 +133,7 @@ Option<float> ProfilerFrameWarningTime("Profiler.FrameWarningTime", 1.0f / 55.0f
 
 Option<bool> NetworkEnable("Enable", false, "network");
 Option<bool> ActAsServer("ActAsServer", false, "network");
+OptionString DCPPPIP("DCPPPIP", "192.168.167.2", "network");
 OptionString DNS("DNS", "46.101.91.123", "network");
 OptionString NetworkServer("server", "", "network");
 Option<int> LocalPort("LocalPort", NaomiNetwork::SERVER_PORT, "network");

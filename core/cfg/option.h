@@ -492,6 +492,7 @@ extern Option<float> ProfilerFrameWarningTime;
 
 extern Option<bool> NetworkEnable;
 extern Option<bool> ActAsServer;
+extern OptionString DCPPPIP;
 extern OptionString DNS;
 extern OptionString NetworkServer;
 extern Option<int> LocalPort;

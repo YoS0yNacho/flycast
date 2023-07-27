@@ -994,7 +994,7 @@ static void *pico_thread_func(void *)
 		pico_dev = pico_ppp_create();
 		if (!pico_dev)
 			return NULL;
-		pico_string_to_ipv4("192.168.167.2", &addr);
+		pico_string_to_ipv4(config::DCPPPIP.get().c_str(), &addr);
 		memcpy(&dcaddr.addr, &addr, sizeof(addr));
 		pico_ppp_set_peer_ip(pico_dev, dcaddr);
 		pico_string_to_ipv4("192.168.167.1", &addr);
